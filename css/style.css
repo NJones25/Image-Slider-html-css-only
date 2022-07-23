@@ -1,0 +1,73 @@
+html {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-image: radial-gradient(lightcyan 30%, #DECFBE, #AD875C);
+        /* colors 
+        light- #DECFBE
+        middle- #AD875C
+        dark- #4E3C28
+         */
+    background-size: 100%;
+}   
+.c {
+    position: relative;
+    padding: 0%;
+    margin: 0%;
+}
+.c .wrapper {
+    width: 70vw;
+    height: 75vh;
+    margin: 5rem auto;
+    overflow: hidden;
+    box-shadow: 1px 2px 30px rgba(0,0,0,0.562);
+}
+.c .slider-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    height: 100%;
+    animation: slide 15s ease infinite;
+}
+.c #slider-image-1 {
+    background: lawngreen;
+    background: url('/imgs/pexels-artem-podrez-6801178.jpg');
+    background-size: cover;
+}
+.c #slider-image-2 {
+    background: yellow;
+    background: url('/imgs/pexels-artem-podrez-6801188.jpg');
+    background-size: cover;
+}
+.c #slider-image-3 {
+    background: tomato;
+    background: url('/imgs/pexels-artem-podrez-6801215.jpg');
+    background-size: cover;
+}
+.c .button-holder {
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+}
+.c .button-holder .dots {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 3rem;
+    background-color: lightcyan;
+    margin: .4rem .3rem
+    ;
+}
+@keyframes slide {
+    0%{transform: translate(0%);}
+    10%{transform: translate(-100%);}
+    20%{transform: translate(-100%);}
+    30%{transform: translate(-100%);}
+    40%{transform: translate(-200%);}
+    50%{transform: translate(-200%);}
+    60%{transform: translate(-200%);}
+    70%{transform: translate(0%);}
+    80%{transform: translate(0%);}
+    90%{transform: translate(0%);}
+    100%{transform: translate(0%);}
+}
